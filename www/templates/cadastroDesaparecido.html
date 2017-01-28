@@ -1,58 +1,59 @@
 <ion-view title="Cadastro desaparecido" id="page5">
 
   <ion-content padding="true" class="has-header">
-    <div id="pet-image" style="margin: 0px; line-height: 150px; background-color: rgb(232, 235, 239); text-align: center;"
+    <div id="pet-image" sata-urlimg="" style="margin: 0px; line-height: 150px; background-color: rgb(232, 235, 239); text-align: center;"
     onclick="getImage()">
       <i class="icon ion-image" style="font-size: 64px; color: rgb(136, 136, 136); vertical-align: middle;"></i>
     </div>
-    <form id="cadastroDesaparecido-form2" class="list">
-      <label class="item item-input" id="cadastroDesaparecido-input3" name="nome">
+    <form id="formCadastroDesaparecido" class="list">
+      <label class="item item-input" id="cadastroDesaparecido-input3">
         <span class="input-label">Nome do pet:</span>
-        <input type="text" placeholder="">
+        <input type="text" placeholder="" name="nome">
       </label>
-      <label class="item item-input" id="cadastroDesaparecido-input4" name="raca">
+      <label class="item item-input" id="cadastroDesaparecido-input4">
         <span class="input-label">Raça:</span>
-        <input type="text" placeholder="">
+        <input type="text" placeholder="" name="raca">
       </label>
-      <label class="item item-select myclass1" id="cadastroDesaparecido-select1" name="porte">
+      <label class="item item-select myclass1" id="cadastroDesaparecido-select1">
         <span class="input-label">Porte</span>
-        <select>
+        <select name="porte">
           <option>Pequeno</option>
           <option>Pequeno/Médio</option>
           <option>Médio</option>
           <option>Grande</option>
         </select>
       </label>
-      <label class="item item-select" id="cadastroDesaparecido-select2" name="sexo">
+      <label class="item item-select" id="cadastroDesaparecido-select2">
         <span class="input-label">Sexo</span>
-        <select>
+        <select name="sexo">
           <option>Macho</option>
           <option>Fêmea</option>
         </select>
       </label>
-      <label class="item item-input" id="cadastroDesaparecido-input6" name="data_hora">
+      <label class="item item-input" id="cadastroDesaparecido-input6">
         <span class="input-label">Data / hora:</span>
-        <input type="text" placeholder="desaparecimento">
+        <input type="text" placeholder="desaparecimento" name="data_desaparecimento">
       </label>
-      <label class="item item-input" id="cadastroDesaparecido-input7" name="local">
+      <label class="item item-input" id="cadastroDesaparecido-input7">
         <span class="input-label">Local:</span>
-        <input type="text" placeholder="">
+        <input type="text" placeholder="" name="local_desaparecimento">
       </label>
-      <label class="item item-input" id="cadastroDesaparecido-input9" name="tel1">
+      <label class="item item-input" id="cadastroDesaparecido-input9">
         <span class="input-label">Telefone 1:</span>
-        <input type="text" placeholder="">
+        <input type="text" placeholder="" name="telefone">
       </label>
-      <label class="item item-input" id="cadastroDesaparecido-input10" name="tel2">
+      <label class="item item-input" id="cadastroDesaparecido-input10">
         <span class="input-label">Telefone 2:</span>
-        <input type="text" placeholder="">
+        <input type="text" placeholder="" name="telefone2">
       </label>
-      <label class="item item-select" id="cadastroDesaparecido-select3" name="recompensa">
+      <label class="item item-select" id="cadastroDesaparecido-select3">
         <span class="input-label">Recompensa-se</span>
-        <select>
+        <select name="recompensa">
           <option>Não</option>
           <option>Sim</option>
         </select>
       </label>
+      <button id="cadastroDesaparecido-button" onclick="saveCadastroDesaparecido();" class="button button-calm button-block">Salvar</button>
     </form>
   </ion-content>
 </ion-view>
