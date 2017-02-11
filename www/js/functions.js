@@ -29,6 +29,9 @@ function transferirImagem() {
 
     var params = JSON.stringify($('form').serializeObject());
 
+    console.log(params);
+    return;
+
     var options = new FileUploadOptions();
     options.fileKey = "file";
     options.fileName = imageURI.substr(imageURI.lastIndexOf('/') + 1);
